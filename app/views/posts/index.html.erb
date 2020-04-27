@@ -1,9 +1,9 @@
-<h1>Posts: </h1>
+<h1>Posts:</h1>
 
 <ul>
-  <% @user.posts.each do |p| %>
+  <% @posts.each do |p| %>
     <li>
       <%= link_to p.title, post_path(p) %>
-    </li>
+    </li>  
   <% end %>
 </ul>
